@@ -1,0 +1,45 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+
+    <meta http-equiv="Content-Language" content="en-gb">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Super Awesome Tile company</title>
+    <meta name="description" content="Wanna talk about tiles?">
+    
+    <meta name="application-name" content="Super Awesome Tile company" />
+    <meta name="msapplication-tooltip" content="Get the Best Tiles in Scotland">
+    <meta name="msapplication-navbutton-color" content="#FF3300">
+    <meta name="msapplication-starturl" content="https://www.itison.com/?pinned=true">
+    <meta content="name=View Dundee;
+          action-uri=/Dundee?pinned=true;
+          icon-uri=/favicon.ico" name="msapplication-task">
+    <meta name="msapplication-task-separator" content="sep1">
+    <meta content="name=View My Orders;
+          action-uri=/my/complete_orders?pinned=true;
+          icon-uri=/favicon.ico" name="msapplication-task">
+    <meta name="msapplication-config" content="IEconfig.xml" />
+	</head>
+
+  <body>
+		<h1>IE Live Tile test</h1>
+    
+    <script stype="text/javascript">
+      document.addEventListener('mssitepinned', StartPeriodicUpdateBatch, false);
+
+      function StartPeriodicUpdateBatch()
+      {
+        var arrURI = ["/notifications/feed.xml"];
+        window.external.msEnableTileNotificationQueue(true);
+        window.external.msStartPeriodicTileUpdateBatch(arrURI);
+      }
+    </script>
+  </body>
+</html>

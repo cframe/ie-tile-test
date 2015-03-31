@@ -1,0 +1,8 @@
+<tile> 
+  <visual lang="en-US" version="2">
+    <binding template="TileSquare150x150PeekImageAndText04" branding="logo">
+      <image id="1" src="http://contoso.com/images/firstImage.jpg"/>
+      <text id="1">First image</text> 
+    </binding>
+  </visual>
+</tile>
